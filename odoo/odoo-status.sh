@@ -1,3 +1,6 @@
 #!/bin/bash
-sudo systemctl status odoo18
-echo "--- odoo status ---"
+source ../config.sh
+sudo systemctl status "$ODOO_SERVICE"
+echo "#############################"
+echo "$ODOO_SERVICE status"
+echo "#############################"

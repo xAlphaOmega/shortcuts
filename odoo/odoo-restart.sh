@@ -1,5 +1,6 @@
 #!/bin/bash
-sudo systemctl restart odoo18
-echo "#######################"
-echo "#   odoo restarted    #"
-echo "#######################"
+source ../config.sh
+sudo systemctl restart "$ODOO_SERVICE"
+echo "#############################"
+echo "$ODOO_SERVICE restarted"
+echo "#############################"

@@ -1,5 +1,6 @@
 #!/bin/bash
-sudo systemctl stop odoo18
-echo "#######################"
-echo "#     odoo stopped    #"
-echo "#######################"
+source ../config.sh
+sudo systemctl stop "$ODOO_SERVICE"
+echo "#############################"
+echo "$ODOO_SERVICE stopped"
+echo "#############################"
